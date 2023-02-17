@@ -7,7 +7,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class CarServiceImpl implements CarService {
-   private CarDao carDao;
+    CarDao carDao;
 
     public CarServiceImpl(CarDao carDao) {
         this.carDao = carDao;
@@ -15,8 +15,8 @@ public class CarServiceImpl implements CarService {
 
     @Transactional
     @Override
-    public void add(Car car) {
-        carDao.add(car);
+    public void addCar(Car car) {
+        carDao.addCar(car);
     }
 
 

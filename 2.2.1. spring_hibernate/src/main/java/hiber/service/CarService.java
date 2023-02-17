@@ -4,6 +4,6 @@ import hiber.model.Car;
 
 
 public interface CarService {
-    void add(Car car);
+    void addCar(Car car);
 
 }
