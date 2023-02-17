@@ -36,6 +36,18 @@ public class Car {
         return series;
     }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public void setSeries(int series) {
+        this.series = series;
+    }
+
     @Override
     public String toString() {
         return "Car{" +
