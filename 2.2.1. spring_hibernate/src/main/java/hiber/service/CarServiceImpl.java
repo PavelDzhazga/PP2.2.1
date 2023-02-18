@@ -7,7 +7,8 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class CarServiceImpl implements CarService {
-    CarDao carDao;
+
+    private final CarDao carDao;
 
     public CarServiceImpl(CarDao carDao) {
         this.carDao = carDao;
@@ -18,7 +19,6 @@ public class CarServiceImpl implements CarService {
     public void addCar(Car car) {
         carDao.addCar(car);
     }
-
 
 
 }
